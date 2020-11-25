@@ -12,10 +12,8 @@ end
 =end
 
 def reverse_each_word(string)
-  new_string = ""
   string.split(" ").collect do |index|
-    new_string << " #{index.reverse}"
+    " #{index.reverse}"
   end
-  new_string[0] = ""
-  new_string
+  string[0] = ""
 end
